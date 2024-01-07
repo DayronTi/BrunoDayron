@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="/assets/css/estilo.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1> <img src="/assets/imagens/dayron-logo-1.png" alt="" style="width: 150px;"></h1>
+    <header id="inicio">
+        <h1 style="color: white"> Dayron<a style="color: #fe8001; font-family: comfortaa;" href="linkedin.com/bruno-dayron/" target="_blank">Ti</a></h1>
 
         <nav>
             <ul class="navegacaoPrimaria">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#inicio">início</a>
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a href="#resumo">resumo</a>
                 </li>
                 <li>
-                    <a href="#">Hability</a>
+                    <a href="#habilidades">habilidades</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contato">contato</a>
                 </li>
             </ul>
 
             <div class="mobile_menu_icon">
                 <button onclick="menuShow()" class="icon" > <i class="fa-solid fa-bars"></i> </button>
             </div>
-
         </nav>
     </header>
     <div class="mobile_menu">
         <ul class="navegacaoPrimaria2">
             <li class="nav-iten">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#inicio"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="nav-iten">
-                <a href="#"><i class="fa-solid fa-book"></i></a>
+                <a href="#resumo"><i class="fa-solid fa-book"></i></a>
             </li>
             <li class="nav-iten">
-                <a href="#"><i class="fa-solid fa-code"></i></a>
+                <a href="#habilidades"><i class="fa-solid fa-code"></i></a>
             </li>
             <li class="nav-iten">
-                <a href="#"><i class="fa-solid fa-comments"></i></a>
+                <a href="#contato"><i class="fa-solid fa-comments"></i></a>
             </li>
         </ul>
     </div>
@@ -57,12 +56,12 @@
                 </h2>
                 <h2 class="digitando"> Desenvolvedor Web</h2>
                 <p> <i class="fa-solid fa-building-columns"></i> Bacharel em S.I | Técnico em Informática</p>
-                <button>Dowloand CV</button>
+                <button> <a href="/assets/Documentos/CurriculoDev (2).pdf" target="_blank" dowload style="color: black; font-family: comfortaa;" >Dowload CV</a></button>
             </div>
-            <img id="imageminicio" src="/assets/imagens/euPortifolio.png" alt="Uma imagem grande e muito linda minha">
+            <img id="imageminicio" src="/assets/imagens/MinhaLogo.png" alt="Uma imagem grande e muito linda minha">
         </section>
     
-        <Article class="sobre">
+        <Article class="sobre" id="resumo">
             <section class="sobre_titulo">
                 <h2>Quem é Dayron?</h2>
                 <p>Um entusiasta em inovações e apaixonado por tecnologia...</p>
@@ -72,17 +71,21 @@
                     <span></span>
                 </div>
             </section>
-            <img src="/assets/imagens/euPortifolioMain.png" alt="Pesso inlustrativa">
+            <img src="/assets/imagens/MeuRosto.png" alt="Uma foto de apresentação minha">
             <section class="sobre_conteudo">
                 <div class="sobre_texto">
                     <h2>Prazer sou <span style="color: white;"> Bruno Dayron! </span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, a nulla officiis eum odio numquam? Laborum ipsam voluptatum ad, placeat voluptates eius doloribus iusto tempore explicabo adipisci architecto eveniet quos.
-                        <br> <br> dipisci voluptate aut ducimus obcaecati. Voluptatem libero officiis expedita eveniet ullam blanditiis quia cupiditate Lorem tempore! Earum!</p> 
+                    <p>Tenho 19 anos e moro em São Luis do Maranhão, conclui o ensino médio e procurei a área dos sonhos como todo mundo fazia. Passei um ano estudando pra entrar na universidade estadual da minha cidade, eu estava concorrendo para Engenharia da computação, não consegui entrar, mas continuei meus estudos na área de programação.
+                        <br> <br> Surgiu então uma oportunidade de fazer um curso técnico em informática, eu sabia que eu mexeria mais com hardware, mas entrei de cabeça, porque não aprender um pouco de manutenção de computadores? <br>
+                        <br> Algumas semanas depois, recebi a noticia que tinha passado em um afaculdade perto de casa para o curso de Sistemas de Informação, não pensei outra, fiz minha matrícula e no mesmo dia ja fui assistir a primeira aula.
+                        <br> <br>
+                        Antes dessas oportunidades surgirem, meu contato com a tecnologia e computação era pouco, mas hoje um ano depois me considero um técnico habilidoso e um desenvolvedor ambisioso e empolgado.
+                    </p> 
                 </div>
             </section>
         </Article>
 
-        <section class="services">
+        <section class="services" id="habilidades">
             <div class="sobre_titulo">
                 <h2>Minhas Habilidades</h2>
                 <p>Mantendo minha mente focada e sempre ativa pude me especializar em algumas tecnologias e funções. </p>
@@ -97,32 +100,32 @@
                     <li>
                         <i class="fa-solid fa-scroll"></i>
                         <h3>Dev. Java-Script</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <p>Java-Script intermediário com conhecimento de classes, funções, objetos e prototypes </p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-wordpress"></i>
-                        <h3>Wordpress</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>O github me ajudou muito, sempre atualizo ele jogando todos os meus projetos e exercícios feitos por mim.</p>
                     </li>
                     <li>
                         <i class="fa-brands fa-linux"></i>
                         <h3>Linux</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <p>O primeiro sistema operacional que usei foi o ubutu 22.04, utilizava ferramentas, aplicativos e recursos.</p>
                     </li>
                     <li>
                         <i class="fa-brands fa-python"></i>
                         <h3>Dev. Python</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <p>Ja desenvolvi códigos como sistemas de supermercado, sistema de cadastro de õnibus, conhecimento de bibliotecas, lógica de programação, classes, entre outros...</p>
                     </li>
                     <li>
                         <i class="fa-solid fa-tablet"></i>
                         <h3>Design responsivo</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <p>Tive que aprender responsividade, é uma habilidade muito recomendada pelos outros dev e muito pedida em empresas. Logo fui mais afundo estudar sobre essa habilidade!</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <h3> Analista de SEO</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  asperiores officiis rec</p>
+                        <i class="fa-brands fa-react"></i>
+                        <h3> React </h3>
+                        <p>Depois que me aprofundei em JavaScript, procurei novos desafios e uma recomendação que me passaram foi react. Hoje em dia é uma tecnologia que estou estudando!</p>
                     </li>
                 </ul>
             </div>
@@ -142,30 +145,37 @@
                 <h2 class="experience"><i class="fa-solid fa-wrench" style="color: #fe8001;"></i>EXPERIÊNCIA</h2>
                 <div class="experience_content">
                     <div>
-                        <span>2023-2023</span>
+                        <span>2023 - 2023</span>
                         <h3>Web desenvolvedor - Freelancer</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt reprehenderit vero aliquid, consectetur cupiditate debitis voluptas </p>
+                        <p>Trabalhei alguns dias com um desenvolvedor freelancer da minha cidade. Usavamos ferrametas como Bublle, Figma, e Google class pra nos comunicar. Ganhei experiencia com criação e testes de softwares e desenvolvimento responsivo.</p>
+                    </div>
+                    <div>
+                        <span>2023 - Atualmente</span>
+                        <h3>Técnico de informática - Estágio</h3>
+                        <p>Atuei como técnico em informática na Secretaria da Cultura do Estado do Maranhão (SECMA), minhas principais funções foram:
+                            Manutenção de computadores, suporte ao usuário em relação a hadwares, softwares e impressoras! </p>
                     </div>
                     <ul>
+                        <li><i class="fa-solid fa-circle"></i></li>
                         <li><i class="fa-solid fa-circle"></i></li>
                     </ul>
                 </div>
                 <h2 class="education"><i class="fa-solid fa-graduation-cap" style="color: #fe8001;"></i></i>EDUCAÇÃO</h2>
                 <div class="education_content">
                     <div>
-                        <span>2023 - 2023</span>
+                        <span>2023 - 2026</span>
                         <h3>Sistemas de Informação - Universidade Cest</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint sunt blanditiis dignissimos delectus quia dolorum, elige</p>
+                        <p>Minha faculdade, me fez evoluir muito como aluno de tecnologia, deu todo suporte e auxílio. Entrei de cabeça neste curso e hoje em dia eu não saio de maneira alguma, só quando eu terminar, é claro.</p>
                     </div>
                     <div>
-                        <span>2023 - 2023</span>
+                        <span>2022 - 2023</span>
                         <h3>Informática Avançada - Técnico</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint sunt blanditiis dignissimos delectus quia dolorum, elige</p>
+                        <p>Meu curso técnico, por mais que meu sonho seja trabalhar como dev, ja tive boas experiências com manutenção de computadores, redes e softawares! Neste curso eu tive os primeiros passos com o Illustrator, Photoshop, Banco de dados, Eletrônica Básica... </p>
                     </div>
                     <div>
-                        <span>2023 - 2023</span>
-                        <h3>Sistemas de Informação - Universidade Cest</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint sunt blanditiis dignissimos delectus quia dolorum, elige</p>
+                        <span>2023 - Atualmente</span>
+                        <h3>Curso em Video</h3>
+                        <p>Considero o Curso em Video (plataforma de estudo gratuita de tecnologia) uma parte da minha formação já que HTML, CSS, JS, Algorítmos, Python aprendi, apriori, por la.</p>
                     </div>
                     <ul>
                         <li><i class="fa-solid fa-circle"></i></li>
@@ -177,7 +187,7 @@
             </div>
             <div class="cursos">
                 <div class="my_skill">
-                    <h2><i class="fa-sharp fa-solid fa-star"></i>MY SKILLS</h2>
+                    <h2><i class="fa-sharp fa-solid fa-star"></i>HABILIDADES +</h2>
                     <div class="skill_content">
                         <h3>HTML5</h3>
                         <ul>
@@ -209,9 +219,6 @@
                         <ul>
                             <li><i class="fa-sharp fa-solid fa-star"></i></li>
                             <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
                         </ul>
                     </div>
                     <div class="skill_content">
@@ -234,27 +241,27 @@
                     </div>
                 </div>
                 <div class="funfacts">
-                    <h2> <i class="fa-solid fa-heart"></i>FUN FACTS</h2>
+                    <h2> <i class="fa-solid fa-heart"></i>BÔNUS</h2>
                     <ul>
                         <li>
                             <i class="fa-solid fa-mug-hot"></i>
-                            <span>1425</span>
-                            <p>Clients Felizes</p>
+                            <span>3</span>
+                            <p>Xícaras de café por dia</p>
                         </li>
                         <li>
                             <i class="fa-solid fa-medal"></i>
-                            <span>11</span>
+                            <span>0</span>
                             <p>Medalhas</p>
                         </li>
                         <li>
                             <i class="fa-solid fa-user"></i>
-                            <span>6025</span>
-                            <p>Usuários</p>
+                            <span>0</span>
+                            <p>Clientes</p>
                         </li>
                         <li>
                             <i class="fa-solid fa-users"></i>
-                            <span>289</span>
-                            <p>Arquivos</p>
+                            <span>112</span>
+                            <p>Conexões no Linkedin</p>
                         </li>
                     </ul>
                 </div>
@@ -263,7 +270,7 @@
 
     </main> 
     <footer>
-        <section class="sobre_info">
+        <section class="sobre_info" id="contato">
             <h3>Entre em contato comigo</h3>
             <div class="networks">
                 <p> <a href=""> <i class="fa-brands fa-instagram"></i> </a></p>
@@ -276,5 +283,8 @@
     </footer>
 
     <script src="/assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

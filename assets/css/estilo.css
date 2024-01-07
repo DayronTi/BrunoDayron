@@ -12,6 +12,7 @@
 } 
 
 * {
+    max-width: 100%;
     font-family: var(--font-primaria);
     padding: 0%;
     margin: 0%;
@@ -21,7 +22,7 @@
 }
 
 body {
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: var(--cor-primaria);
 }
@@ -29,6 +30,7 @@ body {
 /* HEADER  */
 
 header {
+    margin-top: 10px;
     background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
@@ -37,6 +39,12 @@ header {
     /*position: fixed;
     width: 100%;
     z-index: 1000;*/
+}
+
+header:hover{
+    border-bottom: 0.5px solid white;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 header h1 {
@@ -66,6 +74,10 @@ header .navegacaoPrimaria li a {
     font-size: 1.3rem;
 }
 
+header .navegacaoPrimaria li a:hover {
+    color: #fe8001;
+}
+
 .mobile_menu_icon, .mobile_menu {
     display: none;
 }
@@ -84,9 +96,10 @@ main .sessao1 {
 }
 
 main .sessao1 div {
-    margin-top: 120px;
+    margin-top: 30%;
     align-self: start;
     display: grid;
+    margin-bottom: 40px;
 }
 
 main .sessao1 div h2 {
@@ -219,7 +232,7 @@ article img {
     cursor: pointer;
     grid-row: 2;
     max-width: 100%;
-    border-radius: 100%;
+    border-radius: 60%;
     filter: blur(0px);
 }
 
@@ -634,6 +647,8 @@ article .sobre_texto {
 }
 
 .networks {
+    width: 50%;
+    margin: auto;
     display: flex;
     font-size: 3rem;
     justify-content: space-around;
