@@ -703,7 +703,8 @@ article .sobre_texto {
     }
 
     .sessao1 {
-        background-image: url(/assets/imagens/euPortifolio.png);
+        margin-top: 50px;
+        background-image: url(/assets/imagens/MinhaLogo.png);
         background-repeat: no-repeat;
         background-size: 500px;
         background-position-x: right;
@@ -799,6 +800,23 @@ article .sobre_texto {
         border-top: 2px solid var(--cor-terciaria);
         border-left: 2px solid var(--cor-terciaria);
         margin: -1px;
+    }
+
+    .funfacts {
+        animation: sobeSessao .6s ease-in-out forwards;
+        grid-column: 1/3;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resume_generica {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
+        align-items: start;
     }
 }
 
