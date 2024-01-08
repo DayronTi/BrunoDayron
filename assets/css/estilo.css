@@ -427,7 +427,7 @@ article .sobre_texto {
 .resume_generica .experience_content div {
     background-color: var(--cor-background);
     padding: 40px;
-    display: none;
+    
     animation: ladoSessao .5s ease-in-out forwards;
     position: relative;
 }
@@ -480,7 +480,7 @@ article .sobre_texto {
 .resume_generica .education_content div {
     background-color: var(--cor-background);
     animation: ladoSessao .5s ease-in-out forwards;
-    display: none;
+    
     padding: 40px;
     position: relative;
 }
