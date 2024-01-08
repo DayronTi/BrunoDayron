@@ -427,7 +427,7 @@ article .sobre_texto {
 .resume_generica .experience_content div {
     background-color: var(--cor-background);
     padding: 40px;
-    
+    display: none;
     animation: ladoSessao .5s ease-in-out forwards;
     position: relative;
 }
@@ -480,7 +480,7 @@ article .sobre_texto {
 .resume_generica .education_content div {
     background-color: var(--cor-background);
     animation: ladoSessao .5s ease-in-out forwards;
-    
+    display: none;
     padding: 40px;
     position: relative;
 }
@@ -667,8 +667,6 @@ article .sobre_texto {
     font-size: 2.5rem;
 }
 
-
-
 /*  COMEÇANDO OS EFFEITOS DO MAIN   */
 
 @keyframes sobeSessao {
@@ -693,7 +691,6 @@ article .sobre_texto {
     }
 }
 
-
 /*      RESPONSIVIDADE DE TELAS     */
 
 @media (max-width: 1080px) {
@@ -703,7 +700,7 @@ article .sobre_texto {
 
     .sessao1 {
         margin-top: 50px;
-        background-image: url("/assets/imagens/MinhaLogo.png");
+        background-image: url("./assets/imagens/MinhaLogo.png");
         background-repeat: no-repeat;
         background-size: 500px;
         background-position-x: right;
@@ -720,7 +717,6 @@ article .sobre_texto {
     .sobre_conteudo {
         display: block;
         width: 700px;
-
     }
 
     header {
@@ -759,7 +755,6 @@ article .sobre_texto {
         z-index: 1;
         border-radius: 0 0 10px 10px;
         background-color: #0000000c;
-       
     }
 
     .mobile_menu .nav-iten {
@@ -825,7 +820,7 @@ article .sobre_texto {
     }
 
     .sessao1 {
-        background-image: url("/assets/imagens/euPortifolio.png");
+        background-image: url("./assets/imagens/euPortifolio.png");
         background-repeat: no-repeat;
         background-size: 400px;
     }
@@ -850,7 +845,7 @@ article .sobre_texto {
     }
 
     .sessao1 {
-        background-image: url("/assets/imagens/euPortifolio.png");
+        background-image: url("./assets/imagens/euPortifolio.png");
         background-repeat: no-repeat;
         background-size: 400px;
     }
