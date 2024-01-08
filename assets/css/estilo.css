@@ -696,7 +696,6 @@ article .sobre_texto {
 
 /*      RESPONSIVIDADE DE TELAS     */
 
-
 @media (max-width: 1080px) {
     .sessao1 img {
         display: none;
@@ -704,7 +703,7 @@ article .sobre_texto {
 
     .sessao1 {
         margin-top: 50px;
-        background-image: url(./assets/imagens/MinhaLogo.png);
+        background-image: url("/assets/imagens/MinhaLogo.png");
         background-repeat: no-repeat;
         background-size: 500px;
         background-position-x: right;
@@ -826,7 +825,7 @@ article .sobre_texto {
     }
 
     .sessao1 {
-        background-image: url(./assets/imagens/euPortifolio.png);
+        background-image: url("/assets/imagens/euPortifolio.png");
         background-repeat: no-repeat;
         background-size: 400px;
     }
@@ -851,7 +850,7 @@ article .sobre_texto {
     }
 
     .sessao1 {
-        background-image: url(./assets/imagens/euPortifolio.png);
+        background-image: url("/assets/imagens/euPortifolio.png");
         background-repeat: no-repeat;
         background-size: 400px;
     }
