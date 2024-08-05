@@ -80,3 +80,17 @@ function sobreMim() {
 }
 
 sobreMim();
+
+//Código pra aparecer e sumir sobre mim
+var button = document.querySelector('.lerMais');
+
+button.addEventListener('click', function() {
+    var textoSobre = document.querySelector('.sobre_texto');
+    textoSobre.classList.toggle('active');
+
+    if (textoSobre.classList.contains('active')) {
+        return button.textContent = 'Saber menos';
+    } 
+
+    button.textContent = 'Saber mais';
+});

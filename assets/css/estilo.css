@@ -4,7 +4,7 @@
     --cor-background: rgb(9, 9, 9);
     --cor-secundaria: #fff;
     --cor-terciaria: #fe8001;
-    --cor-quartenaria: #ffffffcc;
+    --cor-quartenaria: rgba(255, 255, 255, 0.8);
     --cor-paragrafos: #707070;
 
     --font-primaria: monospace;
@@ -12,7 +12,6 @@
 } 
 
 * {
-    max-width: 100%;
     font-family: var(--font-primaria);
     padding: 0%;
     margin: 0%;
@@ -23,59 +22,52 @@
 
 body {
     max-width: 100%;
-    margin: 0 auto;
+    margin: auto;
     background-color: var(--cor-primaria);
 }
 
 /* HEADER  */
-
 header {
-    margin-top: 10px;
+    width: 100%;
+    position: fixed;
+    padding-top: 10px;
     background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2% 10%;
-    /*position: fixed;
-    width: 100%;
-    z-index: 1000;*/
+    padding: 20px 10%;
+    z-index: 1000;
 }
 
 header:hover{
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.2px solid var(--cor-secundaria);
     transition: 0.5s;
-    cursor: pointer;
 }
 
-header h1 {
-    color: var(--cor-terciaria);
+header h1, span {
     font-family: var(--font-secundaria);
-    font-size: 2.5rem;
+    letter-spacing: 1.40px;
+    font-size: 35px;
 }
-
-header span {
-    font-family: var(--font-secundaria);
-    font-weight: 300;
-    color: var(--cor-secundaria);
-}
-
 
 header .navegacaoPrimaria {
     align-items: baseline;
     padding-left: 0 10%;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 header .navegacaoPrimaria li a {
     font-family: var(--font-secundaria);
-    font-weight: 700;
+    font-weight: 900;
     color: white;
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 
-header .navegacaoPrimaria li a:hover {
-    color: #fe8001;
+header a:hover {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ffffff;
+    transition: .3s;  
 }
 
 .mobile_menu_icon, .mobile_menu {
@@ -83,20 +75,26 @@ header .navegacaoPrimaria li a:hover {
 }
 
 /*      MAIN     */
+main {
+    max-width: 1940px;
+    margin: auto;
+}
 
 main .sessao1 {
     animation: inicializar .7s forwards;
-    background-color: var(--cor-primaria);
+    background-image: url(/assets/imagens/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
     align-items: center;
-    gap: 60px;
     padding-left: 10%;
+    padding-bottom: 10%;
 }
 
 main .sessao1 div {
-    margin-top: 30%;
+    margin-top: 40%;
     align-self: start;
     display: grid;
     margin-bottom: 40px;
@@ -104,18 +102,17 @@ main .sessao1 div {
 
 main .sessao1 div h2 {
     font-family: var(--font-secundaria);
-    font-weight: 200;
+    font-weight: 300;
     color: var(--cor-secundaria);
 }
 
 main .sessao1 .digitando {
-    margin-top: 5px;
-    font-size: 4rem;
-    margin-bottom: 20px;   
+    margin-top: 4px;
+    font-size: 5rem;
+    margin-bottom: 10px;   
 }
 
 /*      EFEITO DE DIGITAR     */
-
 .digitando::after {
     content: '|';
     margin-left: 5px;
@@ -124,37 +121,31 @@ main .sessao1 .digitando {
 }
 
 main .sessao1 div p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: var(--cor-terciaria);
 }
 
 main .sessao1 div button {
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 3%;
     width: 150px;
     border: none;
-    border-radius: 10px;
-    color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
-    font-family: var(--font-secundaria);
-    font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px;
     margin-bottom: 30%;
 }
 
 main .sessao1 div button:hover {
-    color: var(--cor-secundaria);
     border: 1px solid var(--cor-secundaria);
 }
 
 main .sessao1 img {
-    width: 600px;
-    
+    padding-top: 10%;
+    width: 80%;
 }
 
 /* Função chamada Pisca */
-
 @keyframes pisca { 
     from {
         opacity: 1;
@@ -255,8 +246,51 @@ article .sobre_texto {
     grid-template-columns: 1fr 1fr;
 }
 
+article .sobre_texto p {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+article .sobre_texto p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--cor-background));
+}
+
+article .sobre_texto button {
+    background-color: var(--cor-background);
+    border-style: none;
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+    font-weight: bold;
+    width: 180px;
+    height: 30%;
+    margin: auto;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+article .sobre_texto button:hover {
+    padding-bottom: 6%;
+    border-bottom: 1px solid #ffffff;
+    transition: all 0.2s ease-in-out; 
+}
+
+article .sobre_texto.active p {
+    height: auto;
+}
+
+article .sobre_texto.active p::before {
+    visibility: hidden;
+}
+
 .sobre_texto h2 {
-    font-size: 2.3rem;
+    font-size: 28px;
     color: var(--cor-terciaria);
     grid-column: 1/-1;
 }
@@ -272,7 +306,7 @@ article .sobre_texto {
 }
 
 .sobre_texto p {
-    font-size: 1.3rem;
+    font-size: 18px;
     grid-row: 2;
     grid-column: 1/-1;
     padding: 30px;
