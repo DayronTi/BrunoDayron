@@ -1,2 +1,2 @@
 # meuSite
- (js, html e css)
+Este é o meu site oficial.
